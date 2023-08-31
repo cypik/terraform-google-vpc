@@ -2,14 +2,13 @@ provider "google" {
   project = "opz0-397319"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
-
 }
 
 
-module "vpc" {
+module "gcp-vpc" {
   source                                    = "./../"
-  name                                      = "vpc"
-  environment                               = "dev"
+  name                                      = "app"
+  environment                               = "test"
   project_id                                = "opz0-397319"
   routing_mode                              = "REGIONAL"
   mtu                                       = 1500
@@ -19,5 +18,4 @@ module "vpc" {
   enable_ula_internal_ipv6                  = false
   internal_ipv6_range                       = null
   network_firewall_policy_enforcement_order = "AFTER_CLASSIC_FIREWALL"
-
 }
