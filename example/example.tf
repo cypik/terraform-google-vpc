@@ -5,7 +5,7 @@ provider "google" {
 }
 
 
-module "gcp-vpc" {
+module "vpc" {
   source                                    = "./../"
   name                                      = "app"
   environment                               = "test"
