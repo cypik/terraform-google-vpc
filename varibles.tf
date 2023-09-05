@@ -23,10 +23,34 @@ variable "name" {
 
 }
 
+variable "managedby" {
+  type        = string
+  default     = ""
+  description = "ManagedBy, eg 'Opz0'."
+}
+
+variable "repository" {
+  type        = string
+  default     = "https://github.com/opz0/terraform-gcp-vpc"
+  description = "Terraform current module repo"
+}
+
 variable "google_compute_network_enabled" {
   type        = bool
   default     = true
   description = "A boolean flag to enable/disable vpc."
+}
+
+variable "auto_create_subnetworks" {
+  type    = bool
+  default = false
+  description = "(Optional) When set to true, the network is created in [auto_subnet_mode] and it will create a subnet for each region automatically across the 10.128.0.0/9 address range."
+}
+
+variable "shared_vpc_host" {
+  type        = bool
+  description = "Makes this project a Shared VPC host if 'true' (default 'false')"
+  default     = false
 }
 
 variable "module_enabled" {
