@@ -10,7 +10,7 @@ module "labels" {
 resource "google_compute_network" "vpc" {
   count                                     = var.google_compute_network_enabled && var.module_enabled ? 1 : 0
   project                                   = var.project_id
-  name                                      = var.name
+  name                                      = format("%s-vpc", module.labels.id)
   description                               = var.description
   routing_mode                              = var.routing_mode
   mtu                                       = var.mtu

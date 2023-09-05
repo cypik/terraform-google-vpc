@@ -42,8 +42,8 @@ variable "google_compute_network_enabled" {
 }
 
 variable "auto_create_subnetworks" {
-  type    = bool
-  default = false
+  type        = bool
+  default     = false
   description = "(Optional) When set to true, the network is created in [auto_subnet_mode] and it will create a subnet for each region automatically across the 10.128.0.0/9 address range."
 }
 
