@@ -14,7 +14,6 @@ resource "google_compute_network" "vpc" {
   description                               = var.description
   routing_mode                              = var.routing_mode
   mtu                                       = var.mtu
-  shared_vpc_host                           = var.shared_vpc_host
   auto_create_subnetworks                   = var.auto_create_subnetworks
   enable_ula_internal_ipv6                  = var.enable_ula_internal_ipv6
   internal_ipv6_range                       = var.internal_ipv6_range

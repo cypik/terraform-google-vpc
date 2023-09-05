@@ -47,11 +47,7 @@ variable "auto_create_subnetworks" {
   description = "(Optional) When set to true, the network is created in [auto_subnet_mode] and it will create a subnet for each region automatically across the 10.128.0.0/9 address range."
 }
 
-variable "shared_vpc_host" {
-  type        = bool
-  description = "Makes this project a Shared VPC host if 'true' (default 'false')"
-  default     = false
-}
+
 
 variable "module_enabled" {
   type        = bool
