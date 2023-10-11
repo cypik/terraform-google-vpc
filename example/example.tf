@@ -1,5 +1,5 @@
 provider "google" {
-  project = "opz0-397319"
+  project = "opz0-xxxx"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
@@ -9,7 +9,7 @@ module "vpc" {
   source                                    = "./../"
   name                                      = "app"
   environment                               = "test"
-  project_id                                = "opz0-397319"
+  project_id                                = "opz0-xxxx"
   routing_mode                              = "REGIONAL"
   mtu                                       = 1500
   google_compute_network_enabled            = true
