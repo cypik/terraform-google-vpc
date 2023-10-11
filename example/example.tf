@@ -12,8 +12,6 @@ module "vpc" {
   project_id                                = "opz0-xxxx"
   routing_mode                              = "REGIONAL"
   mtu                                       = 1500
-  google_compute_network_enabled            = true
-  module_enabled                            = true
   delete_default_routes_on_create           = true
   enable_ula_internal_ipv6                  = false
   internal_ipv6_range                       = null
