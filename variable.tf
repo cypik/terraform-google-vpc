@@ -41,7 +41,6 @@ variable "google_compute_network_enabled" {
   description = "A boolean flag to enable/disable vpc."
 }
 
-
 variable "auto_create_subnetworks" {
   type        = bool
   default     = false
