@@ -10,12 +10,6 @@ variable "label_order" {
   description = "Label order, e.g. `name`,`application`."
 }
 
-variable "project_id" {
-  type        = string
-  default     = null
-  description = "(Optional) The ID of the project in which the resource belongs. If it is not set, the provider project is used."
-}
-
 variable "name" {
   type        = string
   default     = ""

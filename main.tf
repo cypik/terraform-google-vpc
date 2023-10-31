@@ -1,5 +1,8 @@
+data "google_client_config" "current" {
+}
+
 module "labels" {
-  source      = "git::git@github.com:opz0/terraform-gcp-labels.git?ref=master"
+  source      = "git::https://github.com/opz0/terraform-gcp-labels.git?ref=v1.0.0"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
@@ -9,7 +12,7 @@ module "labels" {
 
 resource "google_compute_network" "vpc" {
   count                                     = var.google_compute_network_enabled && var.module_enabled ? 1 : 0
-  project                                   = var.project_id
+  project                                   = data.google_client_config.current.project
   name                                      = format("%s-vpc", module.labels.id)
   description                               = var.description
   routing_mode                              = var.routing_mode
