@@ -51,7 +51,7 @@ This module provides the following outputs:
 - 'vpc_name': The name of the created VPC.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[examples](https://github.com/cypik/terraform-gcp-vpc/blob/master/example)' directory within this repository.
 
 ## License
 This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-gcp-vpc/blob/master/LICENSE) file for more details.
