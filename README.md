@@ -17,10 +17,10 @@ This Terraform module creates an GCP Virtual Private Cloud (VPC) along with addi
 ## Usage
 
 Include the module configuration in your main.tf file, specifying the required variables:
-
+## Example: vpc
 ```hcl
 module "vpc" {
-  source                                    = "git::https://github.com/opz0/terraform-gcp-vpc.git?ref=v1.0.0"
+  source                                    = "git::https://github.com/cypik/terraform-gcp-vpc.git?ref=v1.0.0"
   name                                      = "app"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
@@ -54,7 +54,7 @@ This module provides the following outputs:
 For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
 
 ## License
-This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/opz0/terraform-gcp-vpc/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-gcp-vpc/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
