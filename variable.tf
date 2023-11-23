@@ -25,7 +25,7 @@ variable "managedby" {
 
 variable "repository" {
   type        = string
-  default     = ""
+  default     = "https://github.com/cypik/terraform-gcp-vpc.git"
   description = "Terraform current module repo"
 }
 
