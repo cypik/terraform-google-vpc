@@ -36,22 +36,25 @@ Replace the 'source' attribute with the actual path to the module in your projec
 ## Module Inputs
 This module supports the following input variables:
 
-- 'name': The name of the VPC.
-- 'environment': The environment for the VPC.
-- 'routing_mode': The routing mode for the VPC (e.g., "REGIONAL").
-- 'mtu': The Maximum Transmission Unit (MTU) for the VPC.
-- 'delete_default_routes_on_create': Whether to delete default routes on VPC creation.
-- 'enable_ula_internal_ipv6': Enable ULA internal IPv6.
-- 'internal_ipv6_range': Internal IPv6 range for the VPC (can be set to null).
-- 'network_firewall_policy_enforcement_order': The enforcement order for network firewall policies.
+- `name` : The name of the VPC.
+- `environment` : The environment for the VPC.
+- `routing_mode` : The routing mode for the VPC (e.g., "REGIONAL").
+- `mtu` : The Maximum Transmission Unit (MTU) for the VPC.
+- `delete_default_routes_on_create` : Whether to delete default routes on VPC creation.
+- `enable_ula_internal_ipv6` : Enable ULA internal IPv6.
+- `internal_ipv6_range` : Internal IPv6 range for the VPC (can be set to null).
+- `network_firewall_policy_enforcement_order` : The enforcement order for network firewall policies.
 
 ## Module Outputs
 This module provides the following outputs:
 
-- 'vpc_name': The name of the created VPC.
+- `vpc_name` : The name of the created VPC.
+- `vpc_id` : The outputs of the created VPC.
+- `gateway_ipv4` : The IPv4 address of the gateway.
+-  `self_link` : The URI of the created resource.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the '[examples](https://github.com/cypik/terraform-gcp-vpc/blob/master/example)' directory within this repository.
+For detailed examples on how to use this module, please refer to the [EXAMPLES](https://github.com/cypik/terraform-gcp-vpc/tree/master/example) directory within this repository.
 
 ## License
 This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-gcp-vpc/blob/master/LICENSE) file for more details.

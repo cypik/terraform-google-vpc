@@ -79,7 +79,7 @@ variable "internal_ipv6_range" {
 
 variable "delete_default_routes_on_create" {
   type        = bool
-  default     = false
+  default     = true
   description = "(Optional) If set to true, ensure that all routes within the network specified whose names begin with 'default-route' and with a next hop of 'default-internet-gateway' are deleted."
 }
 

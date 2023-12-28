@@ -2,6 +2,7 @@ output "vpc_id" {
   value       = module.vpc.vpc_id
   description = "The outputs of the created VPC."
 }
+
 output "gateway_ipv4" {
   value       = module.vpc.gateway_ipv4
   description = "The IPv4 address of the gateway"
