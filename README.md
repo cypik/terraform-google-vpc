@@ -1,4 +1,4 @@
-# terraform-gcp-vpc
+# Terraform-gcp-vpc
 # Terraform Google Cloud VPC Module
 
 This Terraform module provisions a Google Cloud VPC with customizable options.
@@ -17,7 +17,7 @@ This Terraform module creates an GCP Virtual Private Cloud (VPC) along with addi
 ## Usage
 
 Include the module configuration in your main.tf file, specifying the required variables:
-## Example: vpc
+## Example: _vpc_
 ```hcl
 module "vpc" {
   source                                    = "git::https://github.com/cypik/terraform-gcp-vpc.git?ref=v1.0.0"
@@ -54,11 +54,11 @@ This module provides the following outputs:
 -  `self_link` : The URI of the created resource.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [EXAMPLES](https://github.com/cypik/terraform-gcp-vpc/tree/master/example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/cypik/terraform-gcp-vpc/tree/master/example) directory within this repository.
 
 ## License
-This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-gcp-vpc/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **'[License Name]'** License. Please see the [LICENSE](https://github.com/cypik/terraform-gcp-vpc/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
-Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **'[License Name]'** and **'[Your Name]'** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
