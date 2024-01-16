@@ -18,7 +18,7 @@ This Terraform module creates an GCP Virtual Private Cloud (VPC) along with addi
 
 ## Usage
 
-Include the module configuration in your main.tf file, specifying the required variables:
+To get started, make sure you have configured your GCP provider. You can use the following code as a starting point:
 ## Example: vpc
 ```hcl
 module "vpc" {
