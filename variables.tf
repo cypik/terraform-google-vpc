@@ -1,3 +1,9 @@
+variable "name" {
+  type        = string
+  default     = ""
+  description = "(Optional) The name of the VPC. The name will be used to prefix all associacted resources also. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression \"[a-z]([-a-z0-9]*[a-z0-9])?\" which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. Default is \"main\"."
+}
+
 variable "environment" {
   type        = string
   default     = ""
@@ -10,13 +16,6 @@ variable "label_order" {
   description = "Label order, e.g. `name`,`application`."
 }
 
-variable "name" {
-  type        = string
-  default     = ""
-  description = "(Optional) The name of the VPC. The name will be used to prefix all associacted resources also. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression \"[a-z]([-a-z0-9]*[a-z0-9])?\" which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. Default is \"main\"."
-
-}
-
 variable "managedby" {
   type        = string
   default     = ""
@@ -25,11 +24,11 @@ variable "managedby" {
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/cypik/terraform-gcp-vpc.git"
+  default     = "https://github.com/cypik/terraform-google-vpc"
   description = "Terraform current module repo"
 }
 
-variable "google_compute_network_enabled" {
+variable "network_enabled" {
   type        = bool
   default     = true
   description = "A boolean flag to enable/disable vpc."
