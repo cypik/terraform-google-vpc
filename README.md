@@ -9,6 +9,7 @@ This Terraform module provisions a Google Cloud VPC with customizable options.
 - [Usage](#usage)
 - [Examples](#examples)
 - [License](#license)
+- [Author](#author)
 - [Inputs](#inputs)
 - [Outputs](#outputs)
 
