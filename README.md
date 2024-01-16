@@ -1,4 +1,4 @@
-# Terraform-google-vpc
+# terraform-google-vpc
 # Terraform Google Cloud VPC Module
 
 This Terraform module provisions a Google Cloud VPC with customizable options.
