@@ -3,7 +3,7 @@ data "google_client_config" "current" {
 
 module "labels" {
   source      = "cypik/labels/google"
-  version     = "1.0.0"
+  version     = "1.0.1"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
