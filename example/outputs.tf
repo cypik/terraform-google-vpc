@@ -12,3 +12,8 @@ output "self_link" {
   value       = module.vpc.self_link
   description = "The URI of the created resource"
 }
+
+output "numeric_id" {
+  value       = module.vpc.numeric_id
+  description = "Generated unique numeric identifier."
+}

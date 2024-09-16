@@ -18,8 +18,14 @@ variable "label_order" {
 
 variable "managedby" {
   type        = string
-  default     = "Cypik"
-  description = "ManagedBy, eg 'Cypik'."
+  default     = "info@cypik.com"
+  description = "ManagedBy, eg 'info@cypik.com'"
+}
+
+variable "extra_tags" {
+  type        = map(string)
+  default     = {}
+  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
 }
 
 variable "repository" {
