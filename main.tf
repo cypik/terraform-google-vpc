@@ -3,12 +3,13 @@ data "google_client_config" "current" {
 
 module "labels" {
   source      = "cypik/labels/google"
-  version     = "1.0.1"
+  version     = "1.0.2"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
   managedby   = var.managedby
   repository  = var.repository
+  extra_tags  = var.extra_tags
 }
 
 resource "google_compute_network" "vpc" {
