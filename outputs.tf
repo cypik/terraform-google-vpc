@@ -12,3 +12,8 @@ output "self_link" {
   value       = join("", google_compute_network.vpc[*].self_link)
   description = "The URI of the created resource"
 }
+
+output "numeric_id" {
+  value       = join("", google_compute_network.vpc[*].numeric_id)
+  description = "The unique identifier for the resource. This identifier is defined by the server."
+}

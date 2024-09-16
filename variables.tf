@@ -18,14 +18,20 @@ variable "label_order" {
 
 variable "managedby" {
   type        = string
-  default     = "Cypik"
-  description = "ManagedBy, eg 'Cypik'."
+  default     = "info@cypik.com"
+  description = "ManagedBy, eg 'info@cypik.com'"
 }
 
 variable "repository" {
   type        = string
   default     = "https://github.com/cypik/terraform-google-vpc"
   description = "Terraform current module repo"
+}
+
+variable "extra_tags" {
+  type        = map(string)
+  default     = {}
+  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
 }
 
 variable "network_enabled" {
