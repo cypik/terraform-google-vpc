@@ -23,7 +23,7 @@ To get started, make sure you have configured your GCP provider. You can use the
 ```hcl
 module "vpc" {
   source                                    = "cypik/vpc/google"
-  version                                   = "1.0.2"
+  version                                   = "1.0.3"
   name                                      = "app"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
@@ -99,4 +99,5 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 | <a name="output_numeric_id"></a> [numeric\_id](#output\_numeric\_id) | Generated unique numeric identifier. |
 | <a name="output_self_link"></a> [self\_link](#output\_self\_link) | The URI of the created resource |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The outputs of the created VPC. |
+| <a name="output_vpc_name"></a> [vpc\_name](#output\_vpc\_name) | The outputs of the created VPC Name. |
 <!-- END_TF_DOCS -->
