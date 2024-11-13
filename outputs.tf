@@ -17,3 +17,8 @@ output "numeric_id" {
   value       = join("", google_compute_network.vpc[*].numeric_id)
   description = "Generated unique numeric identifier."
 }
+
+output "vpc_name" {
+  value       = join("", google_compute_network.vpc[*].name)
+  description = "The outputs of the created VPC Name."
+}

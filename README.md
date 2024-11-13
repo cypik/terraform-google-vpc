@@ -23,7 +23,7 @@ To get started, make sure you have configured your GCP provider. You can use the
 ```hcl
 module "vpc" {
   source                                    = "cypik/vpc/google"
-  version                                   = "1.0.2"
+  version                                   = "1.0.3"
   name                                      = "app"
   environment                               = "test"
   routing_mode                              = "REGIONAL"
